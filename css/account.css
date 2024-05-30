@@ -1,0 +1,405 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header-top {
+	padding: 10px 0px 10px 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-weight: 700;
+	font-size: 20px;
+}
+
+.header-top__logo-link {
+	cursor: pointer;
+}
+
+.menu {
+	margin-top: 10px;
+	text-transform: uppercase;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__list-item {
+	margin-left: 30px;
+}
+
+.menu__list-item:first-child {
+	margin-left: 0px;
+}
+
+.menu__list-link:hover {
+	color: #0000ff;
+	cursor: pointer;
+}
+
+.menu__list-link--active {
+	color: #0000ff;
+}
+
+.ht__w2 {
+	margin-left: 250px;
+}
+
+.header-top__dropdown {
+	position: relative;
+}
+
+.header-top__dropdown-link {
+	display: flex;
+	align-items: center;
+	padding: 0px 25px;
+	cursor: pointer;
+}
+
+.header-top__dropdown-link:hover {
+	color: #0000ff;
+}
+
+.header-top__dropdown-link:hover+.header-top__dropdown-list,
+.header-top__dropdown-list:hover {
+	display: block;
+}
+
+.header-top__dropdown-arrow {
+	width: 30px;
+	height: 15px;
+}
+
+.header-top__dropdown-list {
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	display: none;
+	background-color: #ffffff;
+	border-radius: 0 0 5px 5px;
+	box-shadow: 0 15px 15px #00000033;
+}
+
+.header-top__dropdown-item {
+	margin: 10px auto;
+	width: 100%;
+}
+
+.header-top__dropdown-item:last-child {
+	margin: 25px auto;
+}
+
+.header-top__dropdown-item p {
+	margin: 10px 25px;
+	font-size: 16px;
+}
+
+.htdi__address-link {
+	font-weight: 400;
+	color: #0000ff;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.htdi__schedule {
+	font-weight: 400;
+}
+
+.header-top__account-link {
+	padding: 10px;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #eeffff;
+	border: 2px solid #000000;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.header-top__account-image {
+	width: 30px;
+	height: 30px;
+}
+
+.header-top__language {
+	cursor: pointer;
+}
+
+.header-top__language-wrapper {
+	display: flex;
+	gap: 10px;
+}
+
+.header-top__language-name {
+	text-transform: uppercase;
+}
+
+.header-middle {
+	padding: 15px 0px 15px 0px;
+	font-weight: 700;
+}
+
+.additional-menu__list {
+	display: flex;
+	justify-content: start;
+	align-items: center;
+}
+
+.additional-menu__list-item {
+	margin-left: 30px;
+}
+
+.additional-menu__list-item:first-child {
+	margin-left: 0px;
+}
+
+.additional-menu__list-link:hover {
+	color: #0000ff;
+	cursor: pointer;
+}
+
+.additional-menu__list-link--active {
+	color: #0000ff;
+}
+
+.account-choice {
+	margin: 100px auto 25px;
+	padding: 15px;
+	width: 700px;
+	display: flex;
+	justify-content: space-around;
+	font-weight: 700;
+	font-size: 24px;
+	text-align: center;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	background-color: #eeffff;
+}
+
+.account-choice__link {
+	padding: 10px;
+	width: 250px;
+	cursor: pointer;
+}
+
+.account-choice__link--active {
+	color: #ffffff;
+	border: 2px solid #000000;
+	border-radius: 5px;
+	background-color: #0000ff;
+}
+
+.account-form {
+	display: none;
+}
+
+.account-form--active {
+	display: block;
+}
+
+.sign-in,
+.sign-up {
+	margin: 0px 0px 100px 0px;
+}
+
+.sign-in--active,
+.sign-up--active {
+	display: block;
+}
+
+.sign-in__form,
+.sign-up__form {
+	margin: 0px auto;
+	width: 700px;
+	display: flex;
+	gap: 25px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	background-color: #eeffff;
+}
+
+.sign-in__form-wrapper,
+.sign-up__form-wrapper {
+	width: 500px;
+	display: flex;
+	gap: 25px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+}
+
+.sifw__1,
+.sufw__1 {
+	margin-top: 25px;
+}
+
+.sifw__2,
+.sufw__2 {
+	margin-bottom: 25px;
+}
+
+.sign-in__form-image,
+.sign-up__form-image {
+	margin: 0 auto;
+	width: 100px;
+	height: 100px;
+	border-radius: 25px;
+}
+
+.sign-in__form-label,
+.sign-up__form-label {
+	color: #0000ff;
+	font-weight: 700;
+	font-size: 24px;
+}
+
+.sign-in__form-input,
+.sign-up__form-input {
+	padding: 10px;
+	width: 100%;
+	font-weight: 700;
+	font-size: 20px;
+	color: #000000;
+	outline: none;
+	border: 1px solid #000000;
+	cursor: text;
+}
+
+.sign-in__form-input::placeholder,
+.sign-up__form-input::placeholder {
+	font-weight: 700;
+	font-size: 20px;
+	color: #000000;
+}
+
+.sign-in__form-button,
+.sign-up__form-button {
+	margin-top: 15px;
+	padding: 10px 30px;
+	width: 100%;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 24px;
+	color: #ffffff;
+	/* background-color: #000080; */
+	background-color: #0000ff;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.footer {
+	padding: 50px 0px 25px 0px;
+	font-weight: 700;
+	color: #ffffff;
+	background-color: #2d2d2d;
+}
+
+.footer-wrapper {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-menu {
+	width: 150px;
+}
+
+.footer-menu__last {
+	width: max-content;
+}
+
+.footer-menu__title {
+	margin-bottom: 15px;
+	padding-bottom: 15px;
+	font-size: 18px;
+	color: #a0a0a0;
+	border-bottom: 1px solid #464646;
+}
+
+.footer-menu__list-item {
+	margin: 25px 0;
+}
+
+.footer-menu__list-link {
+	cursor: pointer;
+}
+
+.footer-menu__list-link:hover {
+	text-decoration: underline;
+}
+
+.fmli-telephone {
+	margin-top: 0;
+	font-size: 24px;
+}
+
+.fmll-telephone:hover {
+	text-decoration: none;
+}
+
+.fmli__text-address,
+.fmli__text-schedule {
+	margin-bottom: 15px;
+}
+
+.fmli__address,
+.fmli__schedule {
+	font-weight: 400;
+}
+
+.fmli__address-link {
+	cursor: pointer;
+}
+
+.fmli__address-link:hover {
+	text-decoration: underline;
+}
+
+.fmli__mail-link {
+	font-weight: 400;
+	font-size: 20px;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.footer-copy {
+	margin: 0px auto 0px;
+	text-align: center;
+}

@@ -1,0 +1,153 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header {
+	padding: 25px 0px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: #123456;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo-link {
+	cursor: pointer;
+}
+
+.menu {
+	text-transform: uppercase;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__list-item {
+	margin-left: 30px;
+}
+
+.menu__list-item:first-child {
+	margin-left: 0px;
+}
+
+.menu__list-item:last-child {
+	margin-left: 75px;
+}
+
+.menu__list-link {
+	padding-bottom: 5px;
+}
+
+.menu__list-link:hover {
+	border-bottom: 2px solid #ffffff;
+	cursor: pointer;
+}
+
+.menu__list-link--active {
+	border-bottom: 2px solid #ffffff;
+}
+
+.mll__account-exit {
+	padding: 10px 25px;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+	color: #000000;
+	background-color: #eeffff;
+	border: 2px solid #eeffff;
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.mll__account-exit:hover {
+	border-bottom: 2px solid #eeffff;
+}
+
+.menu__list-image {
+	width: 30px;
+	height: 30px;
+}
+
+.order {
+	padding: 100px 0px;
+	height: calc(100vh - 100px);
+	background-color: #eeffff;
+}
+
+.order-wrapper {
+	display: flex;
+	gap: 25px;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.form-service {
+	width: 100%;
+	display: flex;
+	gap: 10px;
+	flex-direction: column;
+	justify-content: start;
+	align-items: start;
+}
+
+.form-service__label {
+	font-weight: 700;
+	font-size: 18px;
+	color: #3498db;
+}
+
+.form-service__select {
+	padding: 10px 15px 10px 10px;
+	font-size: 18px;
+	color: #000000;
+	border: none;
+}
+
+.form-comment {
+	width: 100%;
+}
+
+.form-comment__textarea {
+	width: 100px;
+	height: 100px;
+}

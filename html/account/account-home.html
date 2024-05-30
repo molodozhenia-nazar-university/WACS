@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CleanEaseHub</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/account-home.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-wrapper">
+
+				<a class="header__logo-link" href="../../index.html">
+					<img class="header__logo-image" src="../../image/logo_white.svg" alt="alt">
+				</a>
+
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a class="menu__list-link  menu__list-link--active" href="account-home.html">Домашня</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="account-story.html">Історія</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="account-settings.html">Налаштування</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link mll__account-exit" href="../../index.html">
+								<img class="menu__list-image" src="../../image/icon/account.svg" alt="alt">
+								Вихід
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</header>
+
+	<section class="order">
+		<div class="container">
+			<div class="order-wrapper">
+
+				<div class="form-service">
+
+					<label class="form-service__label" for="service">Послуга:</label>
+
+					<select class="form-service__select" name="service" id="service">
+						<option class="form-service__select" value="Оберіть послугу">Оберіть послугу</option>
+						<option class="form-service__select" value="Базове">Базове</option>
+						<option class="form-service__select" value="Генеральне">Генеральне</option>
+						<option class="form-service__select" value="Кухня">Кухня</option>
+						<option class="form-service__select" value="Санвузол">Санвузол</option>
+						<option class="form-service__select" value="Вікна">Вікна</option>
+						<option class="form-service__select" value="Після ремонту">Після ремонту</option>
+					</select>
+
+				</div>
+
+				<div class="form-comment">
+					<label class="form-comment__label" for="comment">Коментар</label>
+					<textarea class="form-comment__textarea" name="comment" id="comment"></textarea>
+				</div>
+
+				<div class="send">
+					<button class="send-button" submit="submit">Замовити</button>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+</body>
+
+</html>

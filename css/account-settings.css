@@ -1,0 +1,233 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	color: #000000;
+	background-color: #ffffff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.container {
+	max-width: 1220px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.header {
+	padding: 25px 0px;
+	font-weight: 700;
+	font-size: 20px;
+	color: #ffffff;
+	background-color: #123456;
+}
+
+.header-wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo-link {
+	cursor: pointer;
+}
+
+.menu {
+	text-transform: uppercase;
+}
+
+.menu__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.menu__list-item {
+	margin-left: 30px;
+}
+
+.menu__list-item:first-child {
+	margin-left: 0px;
+}
+
+.menu__list-item:last-child {
+	margin-left: 75px;
+}
+
+.menu__list-link {
+	padding-bottom: 5px;
+}
+
+.menu__list-link:hover {
+	border-bottom: 2px solid #ffffff;
+	cursor: pointer;
+}
+
+.menu__list-link--active {
+	border-bottom: 2px solid #ffffff;
+}
+
+.mll__account-exit {
+	padding: 10px 25px;
+	display: flex;
+	gap: 10px;
+	justify-content: space-between;
+	align-items: center;
+	color: #000000;
+	background-color: #eeffff;
+	/* border: 2px solid #eeffff; */
+	border-radius: 30px;
+	cursor: pointer;
+}
+
+.mll__account-exit:hover {
+	border: none;
+}
+
+.menu__list-image {
+	width: 30px;
+	height: 30px;
+}
+
+.settings {
+	padding: 100px 0px;
+	height: calc(100vh - 100px);
+	background-color: #eeffff;
+}
+
+.settings-wrapper {
+	display: flex;
+	gap: 100px;
+	align-items: start;
+}
+
+.left-sidebar {
+	width: 300px;
+	height: calc(100vh - 300px);
+	font-weight: 700;
+	font-size: 18px;
+	color: #3498db;
+	border-right: 1px solid#000000;
+}
+
+.settings-menu__list-item {
+	margin-bottom: 25px;
+}
+
+.settings-menu__list-item:last-child {
+	margin-bottom: 0px;
+}
+
+.settings-menu__list-link {
+	cursor: pointer;
+}
+
+.settings-menu__list-link--active {
+	color: #3434db;
+}
+
+.right-sidebar {
+	width: 100%;
+}
+
+.right-sidebar__child,
+.right-sidebar__profile {
+	display: none;
+}
+
+.right-sidebar__child--active {
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.profile-form,
+.sign-in__formб .delete-account__form {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.profile-form__child,
+.sign-in__form-child,
+.delete-account__form-child {
+	margin-bottom: 25px;
+	width: 400px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.profile-form__child:last-child,
+.sign-in__form-child:last-child,
+.delete-account__form-child:last-child {
+	margin-bottom: 0px;
+}
+
+.profile-form__label,
+.sign-in__form-label,
+.delete-account__form-label {
+	font-size: 18px;
+}
+
+.profile-form__input,
+.sign-in__form-input,
+.delete-account__form-input {
+	padding: 10px;
+	width: 250px;
+	font-size: 16px;
+	color: #000000;
+	outline: none;
+	border: 1px solid #000000;
+	cursor: text;
+}
+
+.profile-form__input::placeholder,
+.sign-in__form-input::placeholder,
+.delete-account__form-input::placeholder {
+	font-size: 16px;
+	color: #000000;
+}
+
+.profile-form__button,
+.sign-in__form-button,
+.delete-account__form-button {
+	margin: 0 auto;
+	padding: 10px 30px;
+	width: 250px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	color: #000000;
+	background-color: #eeffff;
+	border: 2px solid #000000;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+.profile-current {
+	width: 300px;
+	font-size: 18px;
+}
+
+.profile-current__item {
+	margin-bottom: 25px;
+}

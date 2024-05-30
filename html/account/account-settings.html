@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>CleanEaseHub</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/account-settings.css">
+</head>
+
+<body>
+
+	<header class="header">
+		<div class="container">
+			<div class="header-wrapper">
+
+				<a class="header__logo-link" href="../../index.html">
+					<img class="header__logo-image" src="../../image/logo_white.svg" alt="alt">
+				</a>
+
+				<nav class="menu">
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="account-home.html">Домашня</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link" href="account-story.html">Історія</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link menu__list-link--active" href="account-settings.html">Налаштування</a>
+						</li>
+						<li class="menu__list-item">
+							<a class="menu__list-link mll__account-exit" href="../../index.html">
+								<img class="menu__list-image" src="../../image/icon/account.svg" alt="alt">
+								Вихід
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+	</header>
+
+	<section class="settings">
+		<div class="container">
+			<div class="settings-wrapper">
+
+				<div class="left-sidebar">
+					<nav class="settings-menu">
+						<ul class="settings-menu__list">
+							<li class="settings-menu__list-item">
+								<a class="settings-menu__list-link settings-menu__list-link--active">Профіль</a>
+							</li>
+							<li class="settings-menu__list-item">
+								<a class="settings-menu__list-link">Авторизація</a>
+							</li>
+							<li class="settings-menu__list-item">
+								<a class="settings-menu__list-link">Видалити акаунт</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+
+				<div class="right-sidebar">
+
+					<div class="right-sidebar__child right-sidebar__profile right-sidebar__child--active">
+
+						<form class="profile-form" action="#" method="POST">
+
+							<div class="profile-form__child">
+								<label class="profile-form__label" for="profile-form__name">Ім'я</label>
+								<input class="profile-form__input profile-form__name" type="text" name="name" id="profile-form__name"
+									placeholder="Введіть ім'я">
+							</div>
+
+							<div class="profile-form__child">
+								<label class="profile-form__label" for="profile-form__surname">Прізвище</label>
+								<input class="profile-form__input profile-form__surname" type="text" name="surname"
+									id="profile-form__surname" placeholder="Введіть прізвище">
+							</div>
+
+							<div class="profile-form__child">
+								<label class="profile-form__label" for="profile-form__patronymic">По батькові</label>
+								<input class="profile-form__input" type="text" name="patronymic" id="profile-form__patronymic"
+									placeholder="Введіть по батькові">
+							</div>
+
+							<div class="profile-form__child">
+								<label class="profile-form__label" for="profile-form__address">Адреса</label>
+								<input class="profile-form__input" type="text" name="address" id="profile-form__address"
+									placeholder="Введіть адресу">
+							</div>
+
+							<div class="profile-form__child">
+								<button class="profile-form__button" type="submit">Змінити</button>
+							</div>
+
+						</form>
+
+						<div class="profile-current">
+							<p class="profile-current__item profile-current__name"></p>
+							<p class="profile-current__item profile-current__surname"></p>
+							<p class="profile-current__item profile-current__patronymic"></p>
+							<p class="profile-current__item profile-current__address"></p>
+						</div>
+
+					</div>
+
+					<div class="right-sidebar__child right-sidebar__sign-in">
+
+						<form class="sign-in__form" action="#" method="POST">
+
+							<div class="sign-in__form-child">
+								<label class="sign-in__form-label" for="sign-in__form-phone">Телефон</label>
+								<input class="sign-in__form-input sufi_phone" type="tel" name="phone" id="sign-in__form-phone"
+									placeholder="Введіть телефон">
+							</div>
+
+							<div class="sign-in__form-child">
+								<label class="sign-in__form-label" for="sign-in__form-password">Пароль</label>
+								<input class="sign-in__form-input sufi_password" type="password" name="password"
+									id="sign-in__form-password" placeholder="Введіть пароль">
+							</div>
+
+							<div class="sign-in__form-child">
+								<button class="sign-in__form-button" type="submit">Змінити</button>
+							</div>
+
+						</form>
+
+					</div>
+
+					<div class="right-sidebar__child right-sidebar__delete-account">
+
+						<form class="delete-account__form" action="#" method="POST">
+
+							<div class="delete-account__form-child">
+								<label class="delete-account__form-label" for="delete-account__form-password">Пароль</label>
+								<input class="delete-account__form-input sufi_password" type="password" name="password"
+									id="delete-account__form-password" placeholder="Введіть пароль">
+							</div>
+
+							<div class="delete-account__form-child">
+								<button class="delete-account__form-button" type="submit">Підтвердити</button>
+							</div>
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<script src="../../js/account-settings.js"></script>
+</body>
+
+</html>
